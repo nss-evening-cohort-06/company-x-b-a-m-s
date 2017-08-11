@@ -6,13 +6,13 @@ var employees = [
 		title: "Chief Cryologist",
 		image: "https://i.pinimg.com/736x/ed/94/06/ed940647fa425a2192de32a493b31492--ugly-faces-hilarious-memes.jpg",
 		bio: "Meet our Chief Cryologist, Kim!  She has years of crying experience.  Things she typically cries about: failed marriages, husband Kanye's mental breakdowns, and getting robbed."
-	}
+	},
 	{
 		name: "James Van Der Beek",
-		title: "Resident Cry Baby"
+		title: "Resident Cry Baby",
 		image: "http://cdn4.thr.com/sites/default/files/imagecache/scale_crop_768_433/2012/04/dawson_crying.jpg",
 		bio: "This guy could really cry you a river, or a creek.  Huge movie buff.  Also responds to 'Dawson'."
-	}
+	},
 	{
 		name: "Chris Crocker",
 		title: "Under-Cover Cryer",
@@ -29,7 +29,7 @@ var products = [
 	image: "http://www.raybanukoutlet.co.uk/wp-content/uploads/2016/05/justinray-ban2140gallery.jpg"
 },
 {
-	name: "Cry Cushion"
+	name: "Cry Cushion",
 	description: "Are you constantly crying in a bathroom stall and getting funny looks. Not anymore with the cry cushion! Simply cry right into the blowhole and BAM! Your cries are turned into the the sweet sounds of flatulence! And what's more socailly acceptable than that?",
 	price: "$49.99",
 	image: "https://smhttp-ssl-49083.nexcesscdn.net/media/catalog/product/cache/4/thumbnail/900x1163/9df78eab33525d08d6e5fb8d27136e95/w/h/whoopee_cushion_float_1.jpg"
@@ -74,3 +74,10 @@ var products = [
 
 
 ]
+
+//coupon function on index page;
+document.getElementById("homeButton").addEventListener("click", getCoupon);
+
+function getCoupon() {
+     document.getElementById("couponCode").innerHTML = "Coupon Code: Cry Baby Cry";
+}
