@@ -11,7 +11,7 @@ var employees = [
 	},
 	{
 		name: "James Van Der Beek",
-		title: "Resident Cry Baby",
+		title: "Cry Guy",
 		image: "http://cdn4.thr.com/sites/default/files/imagecache/scale_crop_768_433/2012/04/dawson_crying.jpg",
 		bio: "This guy could really cry you a river, or a creek.  Huge movie buff.  Also responds to 'Dawson'."
 	},
@@ -93,33 +93,6 @@ var products = [
 
 ]
 
-var jobs = [
-	{
-		name: "Virtual Companion", 
-		title: "Phone Counselor",
-		description: "Are you a current or former NSS student who has fallen into the pit of despair and found yourself crying in the shower? Have you since graduated from the program and STILL find yourself crying in the shower?  Great... this position is for you!",
-		requirement: "",
-	},
-	{
-		name: "Customer Support Companion",
-		title: "Customer Support Technician",
-		description: "Cry Companions is looking for positive individuals who aren't afraid of tears to show support and assist with product questions. It helps if you know a little Javascript too!",
-		requirement: "",
-	},
-	{
-		name: "Shoulder to lean on Companion",
-		title: "Deliverable Friend Service",
-		description: "Were you ever that friend who dropped everything to go and be there for a friend? What about the friend who held the hair of a drunk friend, drove them home, and helped them change out of their disgustingly puked on clothes? Your compassion is what Cry Companions is looking for? You are that friend we need.",
-		requirement: "",
-	},
-	{
-		name: "The Dave Chappelle Companion",
-		title: "Comedian",
-		description: "Can you find humor in anything? Do you have knock knock jokes stored away for a rainy day? You may just be our Dave Chappelle, friend!",
-		requirement: "",
-	},
-
-	]
 
 //coupon function on index page;
 document.getElementById("homeButton").addEventListener("click", getCoupon);
