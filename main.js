@@ -99,8 +99,8 @@ function productCards (products) {
     domString += '</div>';
     domString += '<div class="description">';
     domString += '<p>' + products.description + '</p>';
-    domString += '<h6>$' + products.price + '</h6>';
-    domString += '<img class="produtImages" src="' + products.image + '">';
+    domString += '<h6>' + products.price + '</h6>';
+    domString += '<img class="productImages" src="' + products.image + '">';
     domString += '</div>';
     domString += '</section>';
     return domString;

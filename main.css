@@ -154,11 +154,14 @@ nav a {
 
 .product {
   width: 400px;
-  border: 2px solid slategray;
+  border-radius: 3px;
+  box-shadow: 5px 5px 5px #467F9A;
   margin: 1%;
+  padding: 2px;
+  background-color: #ffffff;
 }
 
-.image img {
+.productImages  {
   max-width: 100%;
   border-top: 1px solid gray;
   border-bottom: 1px solid gray;
@@ -185,7 +188,7 @@ nav a {
 
 /* Card Layout */
 
-#product-container {
+#productContainer {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
