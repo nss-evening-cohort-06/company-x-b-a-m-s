@@ -37,6 +37,35 @@ function newEmployee (newName, newTitle, newImage, newBio) {
 	newEmployee("Johnny Depp", "Cry-Baby", "https://s-media-cache-ak0.pinimg.com/736x/76/a4/86/76a486d247e541d221fa82eefebc3ef3--johnny-depp-cry-baby-johnny-depp-movies.jpg", "He's a bad boy with a heart of gold.");
 	newEmployee("Miley Cyrus", "The Wrecking Ball", "http://www.ixdaily.com/storage/upload/300/p18835rrb117p31llg1e841lbi1m9u4.jpg", "She came to us like a wrecking ball.  All she wanted was to break our walls.");
 
+	var employeeContainer = document.getElementById ("employee-container");
+	function employeePrintToDom (employees){
+		for (var i =0; i <employees.length; i ++) {
+			var currentEmployee = employees[i]; 
+			var employeeCard = employeeString(currentEmployee);
+			employeeContainer.innerHTML += employeeCard;
+		}
+
+
+	}
+
+	function employeeString (employee) {
+		var domString = "";
+	domString += '<section class="product">';
+    domString += '<div class="title">';
+    domString += '<h2>' + employee.name + ' </h2>';
+    domString += '<h6>$' + employee.title + '</h6>';
+    domString += '</div>';
+    domString += '<div class="description">';
+    domString += '<p>' + employee.bio + '</p>';
+    domString += '<img class="produtImages" src="' + employee.image + '">';
+    domString += '</div>';
+    domString += '</section>';
+    return domString;
+	}
+
+	employeePrintToDom(employees);
+
+
 
 var products = [
 {
@@ -107,19 +136,10 @@ function productCards (products) {
 }
 
 
-
-function productArrayToDom(products) {
-  for (var i = 0; i < products.length; i++) {
-    var currentProduct = products[i];
-    var productCardArray = productCards(currentProduct);
-    productContainer.innerHTML += productCardArray;
-  }
-}
-
-productArrayToDom(products);
+]
 
 
-// //coupon function on index page;
+//coupon function on index page;
 // document.getElementById("homeButton").addEventListener("click", getCoupon);
 
 // function getCoupon() {
