@@ -38,7 +38,6 @@ function newEmployee (newName, newTitle, newImage, newBio) {
 	newEmployee("Miley Cyrus", "The Wrecking Ball", "http://www.ixdaily.com/storage/upload/300/p18835rrb117p31llg1e841lbi1m9u4.jpg", "She came to us like a wrecking ball.  All she wanted was to break our walls.");
 
 
-=======
 var products = [
 {
 	name: "Crybans",

@@ -60,7 +60,7 @@ footer {
   -webkit-border-radius: 0;
   -moz-border-radius: 0;
   border-radius: 0px;
-  font-family: Courier New;
+  font-family: 'Josefin Sans', sans-serif;
   color: #ffffff;
   font-size: 15px;
   padding: 5px 20px 7px 20px;
@@ -147,4 +147,45 @@ nav a {
   width: 100%;
   padding: 0;
   margin: 0;
+}
+
+/*CARD LAYOUT*/
+
+.product {
+  width: 400px;
+  border: 2px solid slategray;
+  margin: 1%;
+}
+
+.image img {
+  max-width: 100%;
+  border-top: 1px solid gray;
+  border-bottom: 1px solid gray;
+}
+
+.description > *{
+  text-align: center;
+  margin: 0;
+}
+
+.description {
+  padding: 2%;
+}
+
+.description h6 {
+  font-size: 1.5em;
+  padding: 2%;
+}
+
+.title {
+  text-align: center;
+  text-transform: uppercase;
+}
+
+/* Card Layout */
+
+#product-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
