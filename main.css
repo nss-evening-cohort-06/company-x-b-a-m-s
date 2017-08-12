@@ -161,10 +161,9 @@ nav a {
   background-color: #ffffff;
 }
 
-.productImages  {
+.productImages {
   max-width: 100%;
-  border-top: 1px solid gray;
-  border-bottom: 1px solid gray;
+  margin: auto;
 }
 
 .description > *{
