@@ -2,17 +2,28 @@ body {
 	background-color: #A4D3D2;
   color: #467F9A;
   font-family: 'Josefin Sans', sans-serif;
+  margin: 0;
 }
 
 /*BASE BODY STYLING*/
 .main-container {
   background-color: #ffffff;
   max-width: 60%;
-  margin: auto;
-  padding: 5px;
+  margin: 0 auto 0;
+  padding: 2px;
   border-radius: 3px;
   box-shadow: 5px 5px 5px #467F9A;
   text-align: center;
+}
+
+.secondary-container {
+  background-color: #ffffff;
+  max-width: 60%;
+  margin: 0 auto 0;
+  padding: 10px;
+  border-radius: 3px;
+  box-shadow: 5px 5px 5px #467F9A;
+  
 }
 
 footer {
@@ -73,11 +84,8 @@ footer {
 }
 
 .aboutArticle {
-	border: 1px solid black;
-	width: 400px;
-	margin-top: 40px;
-	margin-bottom: 45px;
-	margin-left: 60px;
+	width: 390px;
+  margin: auto;
 	padding-left: 20px;
 	padding-right: 20px;
 }
@@ -85,4 +93,48 @@ footer {
 /*coupon code text*/
 #couponCode {
 color: black;
+}
+
+
+/*NAVBAR STYLING*/
+
+nav {
+  background-color: #467F9A;
+  margin: 0;
+  padding: 10px;
+  position: relative;
+}
+
+nav ul {
+  margin: 0;
+  list-style: none;
+  color: #ffffff; 
+}
+
+nav li {
+  display: inline-flex;
+  justify-content: space-around;
+  padding-right: 5px;
+}
+
+nav a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+/*header image style*/
+
+.header-image {
+  margin: 0 auto;
+  width: 60%;
+  height: 20%;
+  padding: 0;
+
+}
+
+.header-image img {
+  height: 400px;
+  width: 100%;
+  padding: 0;
+  margin: 0;
 }
