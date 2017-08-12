@@ -1,5 +1,7 @@
 console.log("I'm in main JS");
 
+// Names of Employees
+
 var employees = [
 	{
 		name: "Kim Kardashian",
@@ -21,6 +23,22 @@ var employees = [
 	}
 ]
 
+
+// Function that adds a new employee
+
+function newEmployee (newName, newTitle, newImage, newBio) {
+	var newEmployee = {name: "",title: "",image: "",bio: ""};
+	newEmployee.name= newName;
+	newEmployee.title= newTitle;
+	newEmployee.image= newImage;
+	newEmployee.bio= newBio;
+	employees.push(newEmployee);
+}
+	newEmployee("Johnny Depp", "Cry-Baby", "https://s-media-cache-ak0.pinimg.com/736x/76/a4/86/76a486d247e541d221fa82eefebc3ef3--johnny-depp-cry-baby-johnny-depp-movies.jpg", "He's a bad boy with a heart of gold.");
+	newEmployee("Miley Cyrus", "The Wrecking Ball", "http://www.ixdaily.com/storage/upload/300/p18835rrb117p31llg1e841lbi1m9u4.jpg", "She came to us like a wrecking ball.  All she wanted was to break our walls.");
+
+
+=======
 var products = [
 {
 	name: "Crybans",
@@ -81,3 +99,4 @@ document.getElementById("homeButton").addEventListener("click", getCoupon);
 function getCoupon() {
      document.getElementById("couponCode").innerHTML = "Coupon Code: Cry Baby Cry";
 }
+
