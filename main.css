@@ -125,15 +125,25 @@ nav a {
 /*header image style*/
 
 .header-image {
+  background: linear-gradient(to right, rgba(70,127,154,0), rgba(70,127,154,1)),
+  url("http://assets.nydailynews.com/polopoly_fs/1.1057284.1333730266!/img/httpImage/image.jpg_gen/derivatives/gallery_1200/kim-kardashian.jpg");
+  background-position: center;
   margin: 0 auto;
   width: 60%;
-  height: 20%;
+  height: 300px;
   padding: 0;
+}
 
+.header-image h1 {
+  margin: 0;
+  position: absolute;
+  top: 200px;
+  font-size: 52px;
+  color: #ffffff;
 }
 
 .header-image img {
-  height: 400px;
+  height: 300px;
   width: 100%;
   padding: 0;
   margin: 0;
