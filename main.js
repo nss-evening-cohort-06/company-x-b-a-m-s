@@ -88,15 +88,41 @@ var products = [
 	image: "https://img2.cgtrader.com/items/133097/17c7bf45ab/large/man-in-protective-hazmat-suit-3d-model-low-poly-rigged-max-obj-3ds-fbx.jpg"
 }
 
-
-
 ]
 
-
-//coupon function on index page;
-document.getElementById("homeButton").addEventListener("click", getCoupon);
-
-function getCoupon() {
-     document.getElementById("couponCode").innerHTML = "Coupon Code: Cry Baby Cry";
+var outputProducts = document.getElementById("productContainer");
+function productCards (products) {
+	var domString = "";
+	domString += '<section class="product">';
+    domString += '<div class="title">';
+    domString += '<h2>' + products.name + ' </h2>';
+    domString += '</div>';
+    domString += '<div class="description">';
+    domString += '<p>' + products.description + '</p>';
+    domString += '<h6>$' + products.price + '</h6>';
+    domString += '<img class="produtImages" src="' + products.image + '">';
+    domString += '</div>';
+    domString += '</section>';
+    return domString;
 }
+
+
+
+function productArrayToDom(products) {
+  for (var i = 0; i < products.length; i++) {
+    var currentProduct = products[i];
+    var productCardArray = productCards(currentProduct);
+    productContainer.innerHTML += productCardArray;
+  }
+}
+
+productArrayToDom(products);
+
+
+// //coupon function on index page;
+// document.getElementById("homeButton").addEventListener("click", getCoupon);
+
+// function getCoupon() {
+//      document.getElementById("couponCode").innerHTML = "Coupon Code: Cry Baby Cry";
+// }
 
